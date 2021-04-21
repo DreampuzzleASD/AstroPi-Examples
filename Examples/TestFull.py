@@ -47,6 +47,7 @@ def startTest():
     print("Press RIGHT")
     testButton(baseLib.RIGHT)
     print("Now test is concluded")
+    baseLib.resetPixels()
     exit(0)
 
 

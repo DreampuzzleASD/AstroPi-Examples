@@ -13,6 +13,7 @@ sense = SenseHat()
 R = [255, 0, 0]
 G = [0, 255, 0]
 W = [255, 255, 255]
+B = [0, 0, 0]
 
 
 def redCross():
@@ -56,6 +57,19 @@ def white():
     ]
     sense.set_pixels(white)
 
+def resetPixels():
+    black = [
+        B, B, B, B, B, B, B, B,
+        B, B, B, B, B, B, B, B,
+        B, B, B, B, B, B, B, B,
+        B, B, B, B, B, B, B, B,
+        B, B, B, B, B, B, B, B,
+        B, B, B, B, B, B, B, B,
+        B, B, B, B, B, B, B, B,
+        B, B, B, B, B, B, B, B,
+    ]
+    sense.set_pixels(black)
+    
 
 def showText(text):
     sense.show_message(str(text))
